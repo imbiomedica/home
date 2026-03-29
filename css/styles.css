@@ -10850,8 +10850,8 @@ html {
 }
 
 .content-section {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .content-section-heading h2, .content-section-heading .h2 {
@@ -10875,7 +10875,7 @@ html {
   height: 50px;
   text-align: center;
   color: #fff;
-  background: rgba(52, 58, 64, 0.5);
+  background: #e8b7a5;
   line-height: 50px;
 }
 .scroll-to-top:focus, .scroll-to-top:hover {
@@ -10896,7 +10896,7 @@ html {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
+  background: #aa8467;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -11050,19 +11050,53 @@ footer.footer .social-link:hover {
     height: 75%;
   }
 }
-.masthead {
-  min-height: 30rem;
-  position: relative;
-  display: table;
-  width: 100%;
-  height: auto;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  .masthead {
+    min-height: 30rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+.titulo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #a05d30; /* 🔥 nova cor */
+  
 }
+
+.subtitulo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #7a5c4d;
+}
+.btn-bottom {
+  margin-top: 20px;
+}
+.masthead .container {
+  margin-top: 180px;
+}
+
+@media (max-width: 768px) {
+  .masthead .container {
+    margin-top: 190px; /* menos no celular */
+  }
+}
+
+.subtitulo {
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
 .masthead h1, .masthead .h1 {
   font-size: 4rem;
   margin: 0;
@@ -11190,4 +11224,11 @@ footer.footer .social-link:hover {
 
 .social-link {
   background-color: #f3cfc6 !important;
+}
+
+.map .subtitulo {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
